@@ -1,0 +1,20 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="SpendGuruTheme" parent="Theme.AppCompat.DayNight.DarkActionBar">
+        <item name="colorPrimary">@color/spDark</item>
+        <item name="colorAccent">@color/spAccent</item>
+        <item name="android:textColor">@color/spText</item>
+        <item name="android:colorBackground">@color/spPrimary</item>
+        <item name="android:colorButtonNormal">@color/spAccent</item>
+        <item name="android:editTextColor">@color/spText</item>
+        <item name="android:fontFamily">@font/avenir_next_lt_pro_regular</item>
+
+    </style>
+</resources>

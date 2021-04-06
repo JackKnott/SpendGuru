@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/signInLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignIn"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/enterEmailTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="15dp"
+        android:gravity="center|center_horizontal"
+        android:text="@string/email_placeholder"
+        android:textSize="@dimen/normalText" />
+
+    <EditText
+        android:id="@+id/emailInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:ems="10"
+        android:hint="Enter Email"
+        android:inputType="textEmailAddress"
+        android:textSize="@dimen/normalText" />
+
+    <TextView
+        android:id="@+id/enterPasswordTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="15dp"
+        android:gravity="center|center_horizontal"
+        android:text="@string/password_placeholder"
+        android:textSize="@dimen/normalText" />
+
+    <EditText
+        android:id="@+id/passwordInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:ems="10"
+        android:hint="Enter Password"
+        android:inputType="textPassword"
+        android:textSize="@dimen/normalText" />
+
+    <Button
+        android:id="@+id/signInButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:text="@string/sign_in"
+        android:textSize="@dimen/normalText" />
+
+    <Button
+        android:id="@+id/createAccountButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:text="@string/create_account"
+        android:textSize="@dimen/normalText" />
+
+    <Button
+        android:id="@+id/resetPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:text="@string/reset_password"
+        android:textSize="@dimen/normalText" />
+</LinearLayout>

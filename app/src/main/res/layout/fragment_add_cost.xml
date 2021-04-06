@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/enterCostContainer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".AddCost">
+
+    <TextView
+        android:id="@+id/enterCostHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:gravity="center_horizontal"
+        android:text="@string/enter_cost"
+        android:textSize="@dimen/headerText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/enterAmountField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:layout_marginTop="44dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/enter_amount"
+        android:inputType="numberDecimal"
+        android:maxLength="10"
+        android:textSize="@dimen/normalText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/enterInfo" />
+
+    <EditText
+        android:id="@+id/enterDate"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:layout_marginTop="44dp"
+        android:autofillHints=""
+        android:clickable="true"
+        android:ems="10"
+        android:focusable="false"
+        android:hint="@string/enter_date"
+        android:inputType="date"
+        android:maxLength="10"
+        android:textSize="@dimen/normalText"
+        app:layout_constraintEnd_toStartOf="@+id/clearDate"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/enterCostHeader" />
+
+    <EditText
+        android:id="@+id/enterInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:layout_marginTop="44dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/enter_info"
+        android:inputType="textPersonName"
+        android:maxLength="30"
+        android:textSize="@dimen/normalText"
+        app:layout_constraintTop_toBottomOf="@+id/enterDate"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <Button
+        android:id="@+id/enterButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:layout_marginTop="44dp"
+        android:text="@string/submit"
+        android:textSize="@dimen/normalText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/enterAmountField" />
+
+    <Button
+        android:id="@+id/clearDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:text="@string/reset_date"
+        android:textSize="@dimen/normalText"
+        app:layout_constraintBottom_toTopOf="@+id/enterInfo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/enterCostHeader" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

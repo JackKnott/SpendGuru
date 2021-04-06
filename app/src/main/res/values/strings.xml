@@ -1,0 +1,63 @@
+<resources>
+    <string name="app_name">Spend Guru</string>
+
+    <!-- Main Activity -->
+    <string name="select_category">Select Category</string>
+
+    <!-- Navigation bar -->
+    <string name="title_add">Add Cost</string>
+    <string name="title_spending">Spending</string>
+    <string name="title_budget">Budget</string>
+    <string name="title_settings">Settings</string>
+
+    <!-- Sign in -->
+    <string name="email_placeholder">Enter Email</string>
+    <string name="password_placeholder">Enter Password</string>
+    <string name="sign_in">Sign In</string>
+    <string name="create_account">Create Account</string>
+
+    <!-- Settings -->
+    <string name="reset_password">Reset Password</string>
+    <string name="add_category">Add Category</string>
+    <string name="add_budget">Add Budget</string>
+    <string name="logout">Logout</string>
+
+    <!-- Budget -->
+    <string name="budget_amount_header">Budget Amount: £</string>
+    <string name="budget_spent_header">Budget Spent: £</string>
+    <string name="budget_remaining_header">Budget Remaining: £</string>
+    <string name="edit_budget">Edit Budget</string>
+    <string name="delete_budget">Delete Budget</string>
+    <string name="budget_categories">Select Budget Category</string>
+
+    <!-- Forms -->
+    <string name="clear">Clear</string>
+    <string name="submit">Submit</string>
+    <string name="select_all">Select All</string>
+    <string name="deselect_all">Deselect All</string>
+    <!-- Dates -->
+    <string name="enter_start_date">Enter Start Date</string>
+    <string name="enter_end_date">Enter End Date</string>
+    <string name="enter_date">Enter Date</string>
+    <string name="clear_date">Clear Date</string>
+    <string name="reset_date">Reset Date</string>
+    <!-- Categories -->
+    <string name="choose_categories">Choose Categories</string>
+    <!-- Budget -->
+    <string name="enter_budget_amount">Enter Budget Amount</string>
+    <!-- Cost -->
+    <string name="enter_cost">Enter Cost</string>
+    <string name="enter_amount">Enter Amount</string>
+    <string name="enter_info">Enter Info</string>
+    <!-- Password Reset -->
+    <string name="enter_email_header">Enter email to send reset link to.</string>
+
+
+    <!-- General -->
+    <string name="from">From</string>
+    <string name="to">To</string>
+    <string name="costs">Costs</string>
+    <string name="cost_categories">Cost Categories</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

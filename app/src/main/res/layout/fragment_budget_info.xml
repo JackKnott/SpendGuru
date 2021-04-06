@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/budgetInfoContainer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".BudgetInfo">
+
+    <TextView
+        android:id="@+id/budgetCategory"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="20dp"
+        android:gravity="center"
+        android:textSize="@dimen/headerText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/budgetAmountHeader"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:text="@string/budget_amount_header"
+        android:textSize="@dimen/smallText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/budgetCategory" />
+
+    <TextView
+        android:id="@+id/budgetAmount"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:textSize="@dimen/smallText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/budgetAmountHeader"
+        app:layout_constraintTop_toBottomOf="@+id/budgetCategory" />
+
+    <TextView
+        android:id="@+id/budgetSpentHeader"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:text="@string/budget_spent_header"
+        android:textSize="@dimen/smallText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/budgetAmountHeader" />
+
+    <TextView
+        android:id="@+id/budgetSpent"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:textSize="@dimen/smallText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/budgetSpentHeader"
+        app:layout_constraintTop_toBottomOf="@+id/budgetAmount" />
+
+    <TextView
+        android:id="@+id/budgetRemainingHeader"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:text="@string/budget_remaining_header"
+        android:textSize="@dimen/smallText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/budgetSpentHeader" />
+
+    <TextView
+        android:id="@+id/budgetRemaining"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:textSize="@dimen/smallText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/budgetRemainingHeader"
+        app:layout_constraintTop_toBottomOf="@+id/budgetSpent" />
+
+    <TextView
+        android:id="@+id/startDateHeader"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:text="@string/from"
+        android:textSize="@dimen/smallText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/budgetRemainingHeader" />
+
+    <TextView
+        android:id="@+id/startDate"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:textSize="@dimen/smallText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toEndOf="@+id/startDateHeader"
+        app:layout_constraintTop_toBottomOf="@+id/budgetRemaining" />
+
+    <TextView
+        android:id="@+id/endDateHeader"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:text="@string/to"
+        android:textSize="@dimen/smallText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/startDateHeader" />
+
+    <TextView
+        android:id="@+id/endDate"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:textSize="@dimen/smallText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toEndOf="@+id/endDateHeader"
+        app:layout_constraintTop_toBottomOf="@+id/startDate" />
+
+    <com.anychart.AnyChartView
+        android:id="@+id/budgetChart"
+        android:layout_width="match_parent"
+        android:layout_height="230dp"
+        android:layout_margin="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/deleteBudget"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/endDateHeader"
+        app:layout_constraintVertical_bias="0.309">
+
+    </com.anychart.AnyChartView>
+
+    <Button
+        android:id="@+id/editBudget"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:padding="10dp"
+        android:text="@string/edit_budget"
+        android:textSize="@dimen/smallText"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/budgetChart" />
+
+    <Button
+        android:id="@+id/deleteBudget"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:padding="10dp"
+        android:text="@string/delete_budget"
+        android:textSize="@dimen/smallText"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

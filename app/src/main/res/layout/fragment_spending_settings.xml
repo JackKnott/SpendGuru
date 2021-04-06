@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SpendingSettings"
+    android:orientation="vertical"
+    android:id="@+id/spendingSettingsContainer">
+
+    <TextView
+        android:id="@+id/chooseCategories"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="20dp"
+        android:gravity="center"
+        android:text="@string/choose_categories"
+        android:textSize="@dimen/headerText"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="20dp"
+        android:fadeScrollbars="false"
+        android:scrollbarStyle="insideOverlay"
+        app:layout_constraintBottom_toTopOf="@+id/deselectAllButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chooseCategories">
+
+        <LinearLayout
+            android:id="@+id/layoutInScrollview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/submitSettings"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:text="@string/submit"
+        android:textSize="@dimen/normalText"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/enterEndDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:clickable="true"
+        android:ems="10"
+        android:focusable="false"
+        android:hint="@string/enter_end_date"
+        android:inputType="date"
+        android:textSize="@dimen/normalText"
+        app:layout_constraintBottom_toTopOf="@+id/submitSettings"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/clearEndDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:text="@string/clear"
+        android:textSize="@dimen/normalText"
+        app:layout_constraintBottom_toTopOf="@+id/submitSettings"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/enterEndDate" />
+
+    <Button
+        android:id="@+id/clearStartDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:layout_marginBottom="4dp"
+        android:text="@string/clear"
+        android:textSize="@dimen/normalText"
+        app:layout_constraintBottom_toTopOf="@+id/clearEndDate"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.51"
+        app:layout_constraintStart_toEndOf="@+id/enterStartDate" />
+
+    <EditText
+        android:id="@+id/enterStartDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:clickable="true"
+        android:ems="10"
+        android:focusable="false"
+        android:hint="@string/enter_start_date"
+        android:inputType="date"
+        android:textSize="@dimen/normalText"
+        app:layout_constraintBottom_toTopOf="@+id/enterEndDate"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/deselectAllButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:text="@string/deselect_all"
+        android:textSize="@dimen/normalText"
+        app:layout_constraintBottom_toTopOf="@+id/enterStartDate"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/selectAllButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:layout_marginBottom="20dp"
+        android:text="@string/select_all"
+        android:textSize="@dimen/normalText"
+        app:layout_constraintBottom_toTopOf="@+id/enterStartDate"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.922"
+        app:layout_constraintStart_toEndOf="@+id/deselectAllButton" />
+</androidx.constraintlayout.widget.ConstraintLayout>
