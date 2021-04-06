@@ -6,4 +6,4 @@ It is an application made in Java for Android. Assets have also been created for
 
 This application uses Firebase for storage offline and online.
 
-This was a part of CSC3122.
+This was a part of CSC3122 Mobile Computer Systems Development.
